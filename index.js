@@ -143,13 +143,13 @@ while (true) {
         console.log("'Odd'");
       }
     }
-    if (result > 0 && result % 2 === 0) {
+    if (result > 0 && result % 2 === 0 && Number.isInteger(result) === "true") {
       console.log('"Positive and Even"');
-    } else if (result < 0 && result % 2 === 0) {
+    } else if (result < 0 && result % 2 === 0 && Number.isInteger(result) === "true") {
       console.log('"Negative and Even"');
-    } else if (result > 0 && result % 2 !== 0) {
+    } else if (result > 0 && result % 2 !== 0 && Number.isInteger(result) === "true") {
       console.log('"Positive and Odd"');
-    } else if (result < 0 && result % 2 !== 0) {
+    } else if (result < 0 && result % 2 !== 0 && Number.isInteger(result) === "true") {
       console.log('"Negative and Odd"');
     }
   } else if (typeof result === "string") {
