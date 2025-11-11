@@ -16,7 +16,7 @@ function getValidNumberInput(promptMessage) {
     // cek apakah input valid (bukan NaN)
     if (
       !isNaN(number) &&
-      (/^(0|[1-9]|[-]\d*)$/.test(input) || input.includes("."))
+      (/^[-]?\d+(\.\d+)?$/.test(input) || input.includes("."))
     ) {
       return number;
     }
